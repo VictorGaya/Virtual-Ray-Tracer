@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPSEnabled: 0
-  CheatMode: 0
+  CheatMode: 1
   TutorialTasks:
   - optionalTasksStart: 17
     tasks:

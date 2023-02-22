@@ -31,7 +31,7 @@ namespace _Project.Scripts
         private static GlobalManager instance = null;
 
         public bool FPSEnabled = false;
-        public bool CheatMode = false;
+        public bool CheatMode = true;
 
         public static bool TutorialExpanded = true;
         public static int TutorialPoints = 0;
