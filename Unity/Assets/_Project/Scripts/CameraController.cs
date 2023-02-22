@@ -184,7 +184,7 @@ namespace _Project.Scripts
         private void OnlyOneInputPicker()
         {
 
-            if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.LeftCommand))
+            if (Input.GetMouseButton(1))
             {
                 inputBlocker.gameObject.SetActive(true);
                 mode = true;
@@ -217,7 +217,7 @@ namespace _Project.Scripts
                 return;
             }
 
-            if (mode && !(Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.LeftCommand)))
+            if (mode && !Input.GetMouseButton(1))
             {
                 inputBlocker.gameObject.SetActive(false);
                 GlobalManager.Get().ResetCursor();
@@ -238,16 +238,16 @@ namespace _Project.Scripts
                 OnZoomChanged.Invoke();
 
             // If the left control is pressed and.... 
-            if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.LeftCommand))
+            if (Input.GetMouseButton(1))
             {
 
                 // The right mouse button we activate zoom.
-                if (Input.GetMouseButtonDown(1))
-                {
-                    zoom = true;
-                    GlobalManager.Get().SetCursor(CursorType.ZoomCursor);
-                    return;
-                }
+                // if (Input.GetMouseButtonDown(1))
+                // {
+                //     zoom = true;
+                //     GlobalManager.Get().SetCursor(CursorType.ZoomCursor);
+                //     return;
+                // }
 
                 // The left mouse button or Arrow keys we activate orbiting.
                 if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftArrow) ||
