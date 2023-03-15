@@ -139,7 +139,7 @@ namespace _Project.Scripts
             float xDistance = 0.0f;
             float yDistance = 0.0f;
 
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(1))
             {
                 xDistance += Input.GetAxis("Mouse X") * OrbitSpeed;
                 yDistance -= Input.GetAxis("Mouse Y") * OrbitSpeed;
@@ -171,7 +171,7 @@ namespace _Project.Scripts
             // signs of the coordinates flipped.
             transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotation, 1.0f);
 
-            if (!(Input.GetMouseButton(0) ||
+            if (!(Input.GetMouseButton(1) ||
                   Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) ||
                   Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)))
             {
@@ -250,14 +250,16 @@ namespace _Project.Scripts
                 // }
 
                 // The left mouse button or Arrow keys we activate orbiting.
-                if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftArrow) ||
-                    Input.GetKeyDown(KeyCode.RightArrow) ||
-                    Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    orbiting = true;
-                    GlobalManager.Get().SetCursor(CursorType.RotateCursor);
-                    return;
-                }
+                // if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftArrow) ||
+                //     Input.GetKeyDown(KeyCode.RightArrow) ||
+                //     Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+                // {
+
+                orbiting = true;
+                GlobalManager.Get().SetCursor(CursorType.RotateCursor);
+                return;
+
+                // }
             }
         
             // If the middle mouse is pressed, or the arrow keys we activate panning.
