@@ -1,9 +1,11 @@
+using _Project.Ray_Tracer.Scripts;
 using _Project.Ray_Tracer.Scripts.RT_Scene;
 using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace _Project.UI.Scripts.Control_Panel
 {
@@ -36,6 +38,8 @@ namespace _Project.UI.Scripts.Control_Panel
         private TMP_Dropdown typeDropdown; 
         [SerializeField]
         private FloatEdit refractiveIndexEdit;
+        [SerializeField]
+        private Button deleteObjectButton;
 
         [Serializable]
         public class ExternalChange : UnityEvent { };
@@ -98,6 +102,15 @@ namespace _Project.UI.Scripts.Control_Panel
             typeDropdown.onValueChanged.AddListener( type => ChangeObjectType( (RTMesh.ObjectType) type));
 
             refractiveIndexEdit.OnValueChanged.AddListener((value) => { mesh.RefractiveIndex = value; });
+            deleteObjectButton.onClick.AddListener(() =>
+            {
+                RTSceneManager.Get().DeleteSelected();
+#if UNITY_EDITOR
+                DestroyImmediate(mesh);
+#else
+                Destroy(mesh);
+#endif
+            });
         }
 
         private void FixedUpdate()

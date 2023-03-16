@@ -51,6 +51,8 @@ namespace _Project.UI.Scripts.Control_Panel
 
         [SerializeField]
         private TMP_Dropdown typeDropdown;
+        [SerializeField]
+        private Button deleteLightButton;
 
         [SerializeField] private RTPointLight pointLightPrefab; 
         [SerializeField] private RTSpotLight spotLightPrefab;
@@ -194,6 +196,15 @@ namespace _Project.UI.Scripts.Control_Panel
             spotAttenuationEdit.OnValueChanged.AddListener(value => light.SpotAttenuationPower = value);
             distanceAttenuationEdit.OnValueChanged.AddListener(value => light.LightDistanceAttenuation = value);
             typeDropdown.onValueChanged.AddListener(type => ChangeObjectType((RTLight.RTLightType)type));
+            deleteLightButton.onClick.AddListener(() =>
+            {
+                RTSceneManager.Get().DeleteSelected();
+#if UNITY_EDITOR
+                DestroyImmediate(light);
+#else
+                Destroy(light);
+#endif
+            });
         }
 
         private void FixedUpdate()
