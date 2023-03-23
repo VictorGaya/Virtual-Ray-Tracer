@@ -2489,6 +2489,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 60.000023
       objectReference: {fileID: 0}
+    - target: {fileID: 3299525350381044293, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: The last button in the top left menu bar allows you to add objects to
+        the scene. If you click this button a drop-down menu will appear listing
+        the different types of objects you can add to the scene. When choosing one
+        of these objects the menu will close again and the object will appear at
+        the centre of the scene ready for you to manipulate. To get rid of objects
+        you can simply select them and press the delete button shown in the property
+        panel on the right hand side. This will remove the object from the scene.
+        You are only able to add and remove light sources and objects, there is only
+        ever one camera. This is the way.
+      objectReference: {fileID: 0}
     - target: {fileID: 3503765558642760015, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

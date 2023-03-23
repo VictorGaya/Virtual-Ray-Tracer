@@ -2156,6 +2156,22 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Stralen Genegeerd:'
       objectReference: {fileID: 0}
+    - target: {fileID: 1176755972167355782, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: "Ray traciung is een render techniek die het gedrag van licht simuleert
+        zoals in de echte wereld, maar met 1 groot verschil. In plaats het volgen
+        van stralen (photons) van een lichtbron en alleen de stralen te gebruiken
+        die de camera raken, beginnen ray tracers bij de camera en volgen de stralen
+        naar de lichtbron. Dit is veel sneller, omdat nu alleen de stralen die bijdragen
+        aan de resulterende foto worden gebruikt.\n\nLaten we een voorbeeld nemen
+        om het proces te illustreren. Neem een sc\xE8ne met een camera, een bol en
+        een lichtbron. We volgen een straal vanaf de camera tot het de bol raakt.
+        We moeten ons dan gaan afvragen of deze straal van een lichtbron klan zijn
+        gekomen. We doen dit door een straal te schieten vanaf het punt van aanraking
+        tot de lichtbron. Als deze straal niet door een ander object heen gaat, dan
+        weten we dat dit punt van de bol belicht is en kunnen we het bijbehorende
+        gedeelte cvan de afbeelding inkleuren op basis van het materiaal van de bol."
+      objectReference: {fileID: 0}
     - target: {fileID: 1194272093032223057, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Badge Naam
@@ -2183,6 +2199,20 @@ PrefabInstance:
     - target: {fileID: 1372233506170463363, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433456228802961637, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: "Je kan de meeste objecten en de sc\xE8ne bewegen, roteren en schalen.
+        The enige uitzonderingen zijn de camera, die niet geschaald kan worden, en
+        de lichten die niet geroteerd of geschaald kunnen worden.\n\nAls je een object
+        geselecteerd hebt, kan je direct de positie,, rotatie en schaal aanpassen
+        in het eigenschappen paneel, maar je kan ook de weergegeven gizmo's gebruiken
+        bij een geselecteerd object. Het klikken en slepen van deze gizmo's zorgt
+        ervoor dat het object beweegt, roteert of schaalt.\n\nJe verandert of de
+        gizmo's bewegen, roteren of schalen, door het transformatie type selecteren
+        uit het keuzemenu linksboven.\n\nJe verandert of de gizmo's in een globale
+        of lokale ruimte werken, door de transformatie ruimte te kiezen uit het keuzemenu 
+        linksboven."
       objectReference: {fileID: 0}
     - target: {fileID: 1434766320337214454, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2659,6 +2689,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 60.000023
       objectReference: {fileID: 0}
+    - target: {fileID: 3299525350381044293, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: "met de laatste knop in de rij knoppen linksboven kun je objecten toevoegen
+        aan de sc\xE8ne. Als je deze knop klikt komt er een keuzemenu met een lijst
+        van verschillende objecten die je aan de sc\xE8ne kan toevoegen. Wanneer
+        je een object kiest, dan zal het menu sluiten en het object in het midden
+        van sc\xE8ne terecht komen om direct aangepast te kunnen worden. Om van deze
+        objecten af te komen kun je het object selecteren en op de \"Verwijder\"
+        knop drukken in het eigenschappen paneel aan de rechterkant. Dit verwijdert
+        het object van de sc\xE8ne. Je kan alleen maar lichten en objecten toevoegen
+        en verwijderen, er is altijd maar \xE9\xE9n camera. Dit is de manier."
+      objectReference: {fileID: 0}
     - target: {fileID: 3345241674637497710, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: tooltip
       value: De minimale radius waarmee stralen worden weergegeven.
@@ -3120,9 +3162,9 @@ PrefabInstance:
         <mark=#656565>           </mark> Shaduw
 
         <mark=#008CFF>          
-        </mark> Reflecteer
+        </mark> Reflecterend
 
-        <mark=#00FF32>           </mark> Breek
+        <mark=#00FF32>           </mark> Brekend
 
         <mark=#FF0000>          
         </mark> Niet Geraakt'
@@ -4016,6 +4058,27 @@ PrefabInstance:
       propertyPath: tooltip
       value: Schakelt transpirantie in voor stralen.
       objectReference: {fileID: 0}
+    - target: {fileID: 6972195679727135934, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: 'Met brekende stralen kunnen het bereiken om materialen er transparant
+        uit te laten zien. Wanneer een straal een object met een transparant materiaal
+        raakt, dan kunnen we een brekende straal schieten die door de binnenkant
+        van het object heen gaat. De brekende straal gaat niet door in dezelfde richting
+        als de oorsproinkelijke straal, maar buigt een bepaalde hoeveelheid op basis
+        van de eigenschap van het materiaal genaamd de brekingsindex.
+
+
+        Dit
+        proces doet na hoeveel het licht buigt wanneer het een object in en uit gaat,
+        bij objecten als glas of water. Glas heeft een brekingsindex van ongeveer
+        1.5 en water van ongeveer 1.3.
+
+
+        Als we dit combineren met reflecterende
+        stralen, dan kunnen we zeer overtuigende transparante objecten krijgen. Maar
+        dit resulteert ook in meer stralen en resulteert een een hogere recursie
+        diepte.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7033424440201594874, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4130,6 +4193,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7296749112641643452, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: 'Je kan de camera verschuiven door de middelste muisknop ingedrukt te
+        houden en te slepen met de muis.
+
+
+        Je kan de camera cirkelen door
+        de rechter muisknop ingedrukt te houden en te slepen met de muis.
+
+
+        Je
+        kan in- en uitzoomen door te scrollen.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7337531975009227810, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -4235,6 +4311,19 @@ PrefabInstance:
     - target: {fileID: 7778750353642649919, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Hoek Verzwakking
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792767641566461985, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: Omdat ray tracing is gebaseerd op hoe licht zich gedraagt in de echte
+        wereld, kunnen we op een makkelijke manier geadvanceerde kenmerken implementeren,
+        zoals reflecties. Wanneer we een spiegelend oppervlak tegenkomen, hoeven
+        we alleen maar een straal te schieten in de richting van de reflectie. Deze
+        reflecterende straal gedraagt zich dan net als een straal die van de camera
+        komt, en produceert daardoor een kleur. Deze kleur kan gemixt worden in de
+        kleur van de oorspronkelijke straal met een intensiteit afhankelijk van de
+        reflectiewaarde (ook wel spiegelwaarde) van het oppervlak. Dit resulteert
+        in een zeer overtuigende spiegelingen zonder de ray tracer veel ingewikkelder
+        te maken. Maar als je meer stralen gebruikt, dan duurt de render ook langer.
       objectReference: {fileID: 0}
     - target: {fileID: 7793620323911449394, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4603,6 +4692,22 @@ PrefabInstance:
     - target: {fileID: 8863967161205543272, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983632705899542735, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: m_text
+      value: "Je kan de camera, lichten en objecten in de sc\xE8ne selecteren door
+        er met de linker muisknop op te klikken. Dit makreert het geselecteerde object
+        en opent het eigenschappen paneel aan de rechter kant. In dit paneel kan
+        je eigenschappen aanpassen van het geselecteerde object, zoals bijvoorbeeld
+        de kleur.\n\nOm het object te deselecteren, klik met de linker muisknop op
+        een leeg gedeelte van de sc\xE8ne. Als er niets is geselecteerd, dan is er
+        een generale eigenschappen paneel geopend. Hier kan je eigenschappen aanpassen
+        van de ray tracer en de visualisatie.\n\nHet is ook mogelijk om stralen van
+        waarde zijn voor een pixel te selecteren door een pixel aan te klikken in
+        het render voorbeeld rechts onder. Wanneer een straal is geselecteerd worden
+        alle andere stralen verborgen. Dit is handig wanneer je het pad wil volgen
+        van een specifieke straal. Je kan de pixel weer deselcteren door er nog een
+        keer op te klikken in het render voorbeeld."
       objectReference: {fileID: 0}
     - target: {fileID: 8984676670074455421, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
