@@ -1863,19 +1863,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3379506522100200911, guid: aa7cec59df0025d4896ac99db41e4250, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.35944384
+      value: 0.3698286
       objectReference: {fileID: 0}
     - target: {fileID: 3379506522100200911, guid: aa7cec59df0025d4896ac99db41e4250, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.031739857
+      value: -0.033532724
       objectReference: {fileID: 0}
     - target: {fileID: 3379506522100200911, guid: aa7cec59df0025d4896ac99db41e4250, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9290119
+      value: 0.9247014
       objectReference: {fileID: 0}
     - target: {fileID: 3379506522100200911, guid: aa7cec59df0025d4896ac99db41e4250, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.08203423
+      value: 0.08384359
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa7cec59df0025d4896ac99db41e4250, type: 3}
@@ -1894,13 +1894,25 @@ PrefabInstance:
       propertyPath: m_text
       value: Bijdrage-Gebaseerde Straal Kleur
       objectReference: {fileID: 0}
+    - target: {fileID: 34915767853799690, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De kleur van dit licht.
+      objectReference: {fileID: 0}
     - target: {fileID: 34915769067070909, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Kleur
       objectReference: {fileID: 0}
+    - target: {fileID: 96273388070840347, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: (De)Activeert alle gebied lichten.
+      objectReference: {fileID: 0}
     - target: {fileID: 155768727987820685, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Schakel Gebied Lichten In
+      objectReference: {fileID: 0}
+    - target: {fileID: 230120551762824653, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Geeft de straal de kleur waar het waarde toevoegt aan de pixel.
       objectReference: {fileID: 0}
     - target: {fileID: 243316310986433304, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1946,9 +1958,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 393804682337563620, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: (De)Activeert alle punt lichten
+      objectReference: {fileID: 0}
     - target: {fileID: 434735569411539826, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Schakel Punt Lichten In
+      objectReference: {fileID: 0}
+    - target: {fileID: 446233387389659559, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Bepaalt hoe transparent de transparante stralen worden.
       objectReference: {fileID: 0}
     - target: {fileID: 446233387704202647, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -1974,6 +1994,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 533272937332501321, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de objecten moeten draaien of niet.
+      objectReference: {fileID: 0}
     - target: {fileID: 587083086158322995, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1997,6 +2021,10 @@ PrefabInstance:
     - target: {fileID: 732103407158250363, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Schaal
+      objectReference: {fileID: 0}
+    - target: {fileID: 732103407439124599, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De schaal van dit licht.
       objectReference: {fileID: 0}
     - target: {fileID: 813326437467598612, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2050,6 +2078,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 990454325177497947, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De schaal van dit object.
+      objectReference: {fileID: 0}
     - target: {fileID: 990454325215627231, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Rotatie
@@ -2059,6 +2091,14 @@ PrefabInstance:
       value: 'Schaal
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454325496796371, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De rotatie van deze camera.
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454325700644631, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De rotatie van dit object.
       objectReference: {fileID: 0}
     - target: {fileID: 990454325948226587, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -2071,6 +2111,14 @@ PrefabInstance:
     - target: {fileID: 990454326245162042, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Positie
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454326458176451, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De positie van dit licht.
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454326542544694, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De positie van deze camera.
       objectReference: {fileID: 0}
     - target: {fileID: 1043329083760852244, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -2183,6 +2231,15 @@ PrefabInstance:
     - target: {fileID: 1538253777287609761, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Maximale Straal Radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 1538253778046804369, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De maximale radius waarmee stralen worden weergegeven.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620454942524652005, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de Octree moet worden laten zien. Puur visueel, verandert niet het
+        render resultaat.
       objectReference: {fileID: 0}
     - target: {fileID: 1637271971712144978, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -2322,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -242
       objectReference: {fileID: 0}
+    - target: {fileID: 2680403823761778609, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De basis kleur van dit object.
+      objectReference: {fileID: 0}
     - target: {fileID: 2680403823875736736, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.999939
@@ -2334,6 +2395,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Materiaal Instellingen
       objectReference: {fileID: 0}
+    - target: {fileID: 2680403824605287131, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De positie van dit object.
+      objectReference: {fileID: 0}
     - target: {fileID: 2680403824775257089, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: deleteObjectButton
       value: 
@@ -2341,6 +2406,10 @@ PrefabInstance:
     - target: {fileID: 2680403824775682822, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Kleur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680403825157468687, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De basis helderheid van dit object. Simuleert een globaal omgevingslicht.
       objectReference: {fileID: 0}
     - target: {fileID: 2680403825182607597, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: deleteLightButton
@@ -2419,6 +2488,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2840612128957091118, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De snelheid waarmee de straal animatie afspeelt.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840612128957091118, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: interactable
       value: 0
       objectReference: {fileID: 0}
@@ -2458,6 +2531,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Brekings Index
       objectReference: {fileID: 0}
+    - target: {fileID: 2948886461597317319, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Hoeveel het licht buigt wanneer het het object in gaat en weer uit gaat.
+      objectReference: {fileID: 0}
     - target: {fileID: 3045401586673213159, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2494,6 +2571,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3045401587774846750, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De radius waarmee stralen worden weergegeven.
+      objectReference: {fileID: 0}
     - target: {fileID: 3045401588131326766, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Straal Radius
@@ -2524,6 +2605,24 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 3242734692468621052, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Hoe ver weg het scherm is van de camera. Heeft geen effect op de uiteindelijke
+        afbeelding, behalve dat objecten achter het scherm niet gerenderd worden.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242734692689102887, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De helderheid van dit object in plaatsen die verlicht zijn.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242734692734840766, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De hoogte van het scherm van de camera in pixels.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242734693112437055, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De gladheid van het oppervlak van dit object. Voor kleine waarden zijn
+        de spiegelende hooglichten groot en voor grote waarden zijn ze klein.
+      objectReference: {fileID: 0}
     - target: {fileID: 3242734693136733836, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Spiegeling
@@ -2532,9 +2631,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Horizontale Pixels
       objectReference: {fileID: 0}
+    - target: {fileID: 3242734693484890812, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De helderheid van reflecties op dit object.
+      objectReference: {fileID: 0}
     - target: {fileID: 3242734693527700751, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Schittering
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242734693908375713, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De verticale field of view van deze camera.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242734693923079191, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De breedte van het scherm van de camera in pixels.
       objectReference: {fileID: 0}
     - target: {fileID: 3251853223062218960, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -2548,6 +2659,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 60.000023
       objectReference: {fileID: 0}
+    - target: {fileID: 3345241674637497710, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De minimale radius waarmee stralen worden weergegeven.
+      objectReference: {fileID: 0}
     - target: {fileID: 3345241675161749854, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Minimale Straal Radius
@@ -2556,6 +2671,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "\\u25A1 \\u25B2 \nDit zijn niet de objecten waar je naar zoekt. Selecteer
         eerst een object in de sc\xE8ne."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399755892470078580, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of het supersamplen ook gevisualiseerd moet worden of niet.
       objectReference: {fileID: 0}
     - target: {fileID: 3503765558642760015, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2638,6 +2757,11 @@ PrefabInstance:
     - target: {fileID: 3763429298035818704, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3763429298035818707, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Hoevaak een straal kan splitsen. Hogere waarden resulteert in meer gedetailleerde
+        reflecties, maar hierdoor neemt de render tijd toe.
       objectReference: {fileID: 0}
     - target: {fileID: 3763429298358820067, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -2835,6 +2959,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3998683460904638308, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of stralen met kleine toegevoegde waarde moeten worden laten zien. Puur
+        visueel, verandert niet het render resultaat.
+      objectReference: {fileID: 0}
     - target: {fileID: 4082614215028585224, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: 'Volgend Level
@@ -2976,6 +3105,10 @@ PrefabInstance:
     - target: {fileID: 4608078185983796408, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Straal Doorzichtigheid Drempel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608078186365515912, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De drempelwaarde om stralen transparant te maken.
       objectReference: {fileID: 0}
     - target: {fileID: 4632674653241183665, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -3159,6 +3292,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5115373357637364693, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de stralen achtereenvolgend geanimeerd moeten worden (pixel voor
+        pixel).
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115373357637364693, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: interactable
       value: 0
       objectReference: {fileID: 0}
@@ -3243,6 +3381,11 @@ PrefabInstance:
       value: 'Achtergrond Kleur
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408856845520054125, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De achtergrond kleur die gebruikt wordt door de ray tracer wanneer een
+        straal geen objecten in de scene raakt.
       objectReference: {fileID: 0}
     - target: {fileID: 5408856845520054130, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3393,6 +3536,10 @@ PrefabInstance:
     - target: {fileID: 5690775379776406549, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Cheat Modus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5716216951709779403, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de ray tracer schaduwen werpt.
       objectReference: {fileID: 0}
     - target: {fileID: 5777883186873700284, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3606,6 +3753,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Creeren En Verwijderen Van Objecten
       objectReference: {fileID: 0}
+    - target: {fileID: 6389163524748698228, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De rotatie van dit licht.
+      objectReference: {fileID: 0}
     - target: {fileID: 6389163525029310840, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: 'Rotatie
@@ -3622,7 +3773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6400800507330127515, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00012207031
+      value: -0.00018310547
       objectReference: {fileID: 0}
     - target: {fileID: 6411492265083469057, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -3639,6 +3790,14 @@ PrefabInstance:
     - target: {fileID: 6451889568640819912, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451889569721338673, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Wanneer supersampling groter is dan 1, dan gebruikt de ray tracer meer
+        stralen per pixel. Dit resulteert in hogere kwaliteit afbeeldingen met minder
+        rafelige randen, maar dit zorgt er wel voor dat het renderen aanienlijk langer
+        duurt. Supersampling is niet gevisualiseerd, het heeft alleen effect op de
+        resolutie render.
       objectReference: {fileID: 0}
     - target: {fileID: 6451889569721338674, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3748,9 +3907,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6543042390984140186, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de stralen die van de camera komen geanimeerd moeten worden.
+      objectReference: {fileID: 0}
     - target: {fileID: 6593403204811974679, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Scherm Dekking
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593403205235635239, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Hoe ondoorschijnend de afbeelding die geprojectterd wordt op het scherm
+        van de camera is.
       objectReference: {fileID: 0}
     - target: {fileID: 6613613166841224269, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
@@ -3812,6 +3980,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Straal Verberg Drempel
       objectReference: {fileID: 0}
+    - target: {fileID: 6753567244444722794, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: De drempelwaarde om stralen te verbergen.
+      objectReference: {fileID: 0}
     - target: {fileID: 6790270659781143626, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: FPS Teller
@@ -3840,6 +4012,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Versnelling Instellingen
       objectReference: {fileID: 0}
+    - target: {fileID: 6944132593462675521, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Schakelt transpirantie in voor stralen.
+      objectReference: {fileID: 0}
     - target: {fileID: 7033424440201594874, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3855,6 +4031,10 @@ PrefabInstance:
     - target: {fileID: 7033424440201594874, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059393796865576361, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: (De)Activeert alle spot lichten
       objectReference: {fileID: 0}
     - target: {fileID: 7059923189778129861, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3966,6 +4146,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Hex Waarde
       objectReference: {fileID: 0}
+    - target: {fileID: 7540223389786567337, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of stralen die objecten niet raken moeten worden laten zien. Puur visueel,
+        verandert niet het render resultaat.
+      objectReference: {fileID: 0}
     - target: {fileID: 7575373175187716724, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Laat Stralen Zien
@@ -3993,6 +4178,19 @@ PrefabInstance:
     - target: {fileID: 7605324381890169194, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
       value: Octree Diepte
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605324382414493018, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Wanneer supersampling groter is dan 1, dan gebruikt de ray tracer meer
+        stralen per pixel. Dit resulteert in hogere kwaliteit afbeeldingen met minder
+        rafelige randen, maar dit zorgt er wel voor dat het renderen aanienlijk langer
+        duurt. Supersampling is niet gevisualiseerd, het heeft alleen effect op de
+        resolutie render.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664650698835561186, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of stralen moeten worden laten zien. Puur visueel, verandert niet het
+        render resultaat.
       objectReference: {fileID: 0}
     - target: {fileID: 7727062554384309908, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4089,6 +4287,11 @@ PrefabInstance:
     - target: {fileID: 8041324393588348497, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108172357930213091, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de op de as liggende selectiekader moet worden laten zien. Puur visueel,
+        verandert niet het render resultaat.
       objectReference: {fileID: 0}
     - target: {fileID: 8109945216768815269, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4201,6 +4404,10 @@ PrefabInstance:
     - target: {fileID: 8295274377048907396, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -125.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334105700365270072, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Of de animatie op een loop afgespeeld moet worden.
       objectReference: {fileID: 0}
     - target: {fileID: 8334105700365270072, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: interactable
@@ -4335,6 +4542,11 @@ PrefabInstance:
     - target: {fileID: 8697337780241939467, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743206903553162212, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
+      propertyPath: tooltip
+      value: Schakel dynamische straal radius in,, gebaseerd op hoeveel waarde de
+        straal toevoegt.
       objectReference: {fileID: 0}
     - target: {fileID: 8800046807645959502, guid: 60ed96064c5523b46b7a7bd67e36e6d7, type: 3}
       propertyPath: m_text
