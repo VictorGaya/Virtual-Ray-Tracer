@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/_Project/Levels/Octree 2.unity
     guid: 2c83cacebb27d74a298e6da62c9ab928
   - enabled: 1
-    path: Assets/_Project/Levels/Sandbox.unity
+    path: Assets/_Project/Levels/Sandbox_EN.unity
     guid: 87a4ee9ddb599a910bbd006e2fb2701a
+  - enabled: 1
+    path: Assets/_Project/Levels/Sandbox_NL.unity
+    guid: 03ef5453287ac01489214893f6206507
   m_configObjects: {}
