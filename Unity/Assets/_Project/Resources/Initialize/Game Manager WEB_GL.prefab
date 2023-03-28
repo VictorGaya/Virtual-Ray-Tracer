@@ -9,14 +9,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2981704608641618389, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: TutorialTasks.Array.data[0].tasks.Array.data[2].description
-      value: We'll first start by going over the controls and the various interface
-        elements. If you get lost somewhere, you can always go back to previous task(s)
-        or find all the necessary information in the help menu. Access this menu
-        any time by clicking the "Help" button in the top left or by pressing [H].
+      value: You can now also delete any object, except for the camera. Delete a
+        non-camera object from the scene by selecting it and clicking the "Delete"
+        option in the menu.
       objectReference: {fileID: 0}
     - target: {fileID: 2981704608641618389, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: TutorialTasks.Array.data[1].tasks.Array.data[2].description
-      value: Je kan nu ook elk object verwijderen door...
+      value: "Je kan nu ook elk object in de sc\xE8ne verwijderen, behalve de camera.
+        Verwijder een object dat niet de camera is, door op de \"Verwijder\" knop
+        te klikken in het menu."
       objectReference: {fileID: 0}
     - target: {fileID: 2981704608641618394, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: m_RootOrder
