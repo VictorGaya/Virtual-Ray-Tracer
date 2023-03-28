@@ -96,6 +96,10 @@ namespace _Project.UI.Scripts.Main_Menu
                 SceneLoader.Get().LoadScene(++currentScene);
         }
 
+        public void LoadSceneByName(string name) {
+            SceneLoader.Get().LoadScene(name);
+        }
+
         private void Awake()
         {
             lastScene = SceneManager.sceneCountInBuildSettings - 1;

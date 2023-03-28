@@ -27,11 +27,23 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(LoadSceneInternal(index));
     }
 
+    public void LoadScene(string name)
+    {
+        StartCoroutine(LoadSceneInternal(name));
+    }
+
     IEnumerator LoadSceneInternal(int index)
     {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadSceneAsync(index);
+    }
+
+    IEnumerator LoadSceneInternal(string name)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadSceneAsync(name);
     }
 
     private void Awake()
