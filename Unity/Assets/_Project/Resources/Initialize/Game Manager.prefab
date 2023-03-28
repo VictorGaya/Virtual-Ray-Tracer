@@ -103,32 +103,4 @@ MonoBehaviour:
         in de instellingen."
       skippable: 0
       points: 0
-  Badges:
-  - type: 1
-    badgeName: Experimenter
-    badgeDescription: Play with the Virtual Ray Tracer for 3 minutes
-    actionTotal: 3
-  - type: 1
-    badgeName: Expert
-    badgeDescription: Play with the Virtual Ray Tracer for 30 minutes
-    actionTotal: 30
-  - type: 0
-    badgeName: Points Gatherer
-    badgeDescription: Earn at least 1000 points
-    actionTotal: 1000
-  - type: 0
-    badgeName: Points Galore
-    badgeDescription: Earn at least 10000 points
-    actionTotal: 10000
-  - type: 2
-    badgeName: Builder
-    badgeDescription: Ceate 5 objects
-    actionTotal: 5
-  - type: 2
-    badgeName: Creator
-    badgeDescription: Create 50 objects
-    actionTotal: 50
-  - type: 3
-    badgeName: You found the easter egg
-    badgeDescription: The force is strong in this one
-    actionTotal: 1
+  Badges: []

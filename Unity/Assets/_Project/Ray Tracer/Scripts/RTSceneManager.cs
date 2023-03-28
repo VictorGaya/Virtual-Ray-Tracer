@@ -611,8 +611,26 @@ namespace _Project.Ray_Tracer.Scripts
             if (Input.GetKeyDown(KeyCode.S))
                 SetHandleType(HandleType.SCALE);
 
+            // Handle transformation type with click.
+            if (Input.GetMouseButtonDown(3))
+            {
+                switch(transformHandle.type)
+                {
+                    case HandleType.POSITION:
+                        SetHandleType(HandleType.ROTATION);
+                        return;
+                    case HandleType.ROTATION:
+                        SetHandleType(HandleType.SCALE);
+                        return;
+                    case HandleType.SCALE:
+                        SetHandleType(HandleType.POSITION);
+                        return;
+                }
+
+            }
+
             // Handle space hot keys.
-            if (Input.GetKeyDown(KeyCode.Tab))
+            if (Input.GetKeyDown(KeyCode.Tab) || Input.GetMouseButtonDown(4))
             {
                 if (handleSpace == HandleSpace.WORLD)
                     SetHandleSpace(HandleSpace.LOCAL);
