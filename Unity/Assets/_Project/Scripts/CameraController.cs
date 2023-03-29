@@ -28,7 +28,7 @@ namespace _Project.Scripts
 
         [Serializable]
         public class Event : UnityEvent { }
-        public Event onPanChanged, OnOrbitChanged, OnZoomChanged;
+        public Event onCameraChanged;
 
         private float xDegrees = 0.0f;
         private float yDegrees = 0.0f;
@@ -38,6 +38,10 @@ namespace _Project.Scripts
         private bool orbiting = false;
         private bool panning = false;
         private bool mode = false;
+
+        private bool panTask = false;
+        private bool orbitTask = false;
+        private bool zoomTask = false;
 
         void Start() { Initialize(); }
 
@@ -81,6 +85,17 @@ namespace _Project.Scripts
             GlobalManager.Get().ResetCursor();
         }
 
+        private void CompleteCameraTask()
+        {
+            if(panTask && orbitTask && zoomTask)
+            {
+                onCameraChanged?.Invoke();
+                panTask = false;
+                orbitTask = false;
+                zoomTask = false;
+            }
+        }
+
         private void DisableBlocker()
         {
             GlobalManager globalSettings = GlobalManager.Get();
@@ -117,7 +132,10 @@ namespace _Project.Scripts
                 yDistance -= Time.deltaTime * 0.5f;
 
             if (yDistance != 0f || xDistance != 0f)
-                onPanChanged?.Invoke();
+            {
+                panTask = true;
+                CompleteCameraTask();
+            }
 
             // we pan by way of transforming the target in screen space.
             // Grab the rotation of the camera so we can move in a pseudo local XY space.
@@ -155,7 +173,10 @@ namespace _Project.Scripts
                 yDistance -= Time.deltaTime * 20.0f * OrbitSpeed;
 
             if (yDistance != 0f || xDistance != 0f)
-                OnOrbitChanged?.Invoke();
+            {
+                orbitTask = true;
+                CompleteCameraTask();
+            }
 
             xDegrees += xDistance;
             yDegrees += yDistance;
@@ -235,7 +256,10 @@ namespace _Project.Scripts
 
             // Invoke zoom changed
             if (Input.GetAxis("Mouse ScrollWheel") != 0f)
-                OnZoomChanged.Invoke();
+            {
+                zoomTask = true;
+                CompleteCameraTask();
+            }
 
             // If the left control is pressed and.... 
             if (Input.GetMouseButton(1))

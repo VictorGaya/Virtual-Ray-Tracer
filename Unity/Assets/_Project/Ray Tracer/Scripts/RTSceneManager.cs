@@ -73,11 +73,15 @@ namespace _Project.Ray_Tracer.Scripts
 
         [Serializable]
         public class Event : UnityEvent { };
-        public Event OnTranslationMode, OnRotationMode, OnScaleMode, OnLocalSpace, OnGlobalSpace, OnDeselect, OnObjectDeleted;
+        public Event OnLocalSpace, OnGlobalSpace, OnDeselect, onObjectCreated, OnSetHandle, OnObjectDeleted;
 
         private static RTSceneManager instance = null;
         private Selection selection = new Selection();
         private Transform previousTransform;
+
+        private bool translateTask = false;
+        private bool rotateTask = false;
+        private bool scaleTask = false;
 
         private HandleSpace handleSpace = HandleSpace.WORLD;
         
@@ -410,6 +414,7 @@ namespace _Project.Ray_Tracer.Scripts
             }
             Scene.AddMesh(mesh);
             Select(mesh.transform);
+            onObjectCreated?.Invoke();
         }
 
         /// <summary>
@@ -481,11 +486,18 @@ namespace _Project.Ray_Tracer.Scripts
 
             // Invoke transformation type changed listeners
             if (type == HandleType.POSITION)
-                OnTranslationMode?.Invoke();
+                translateTask = true;
             else if (type == HandleType.ROTATION)
-                OnRotationMode?.Invoke();
+                rotateTask = true;
             else
-                OnScaleMode?.Invoke();
+                scaleTask = true;
+            if(translateTask && rotateTask && scaleTask)
+            {
+                OnSetHandle?.Invoke();
+                translateTask = false;
+                rotateTask = false;
+                scaleTask = false;
+            }
 
             // Spotlight may not rotate in z; Arealight may not scale in z
             if ((selectedSpotLight && type == HandleType.ROTATION) ||

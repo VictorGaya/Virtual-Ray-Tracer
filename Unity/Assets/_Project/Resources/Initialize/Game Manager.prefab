@@ -50,9 +50,11 @@ MonoBehaviour:
   - optionalTasksStart: 4
     tasks:
     - identifier: 
-      name: Freedom
-      description: You have reached the final level! This is a sandbox level which
-        means all tools are available to create a customized scene yourself.
+      name: Welcome!
+      description: Welcome to the Sandbox level. In this level you can play around
+        with all the tools the Virtual Ray Tracer has to offer. This tutorial will
+        guide you through some of the core functionality. This will help you get
+        started learning about ray tracing.
       skippable: 1
       points: 93
     - identifier: createObject
@@ -61,6 +63,24 @@ MonoBehaviour:
         the objects in the "Create" dropdown.
       skippable: 0
       points: 538
+    - identifier: movingObject
+      name: Moving an Object
+      description: When you click an object, you can see gizmos near this object.
+        You can use these to translate, rotate and scale the object by clicking and
+        dragging on the gizmos. In the topleft you can select which of these transformations
+        you want to apply. Alternatively, you can change values in the panel on the
+        right.
+      skippable: 0
+      points: 0
+    - identifier: 
+      name: Properties Panel
+      description: The panel on the right also has other settings you can play around
+        with. The Ray Tracer tab changes settings that influence the rays in the
+        sene. The Camera tab adjusts settings for the camera used to render the image.
+        The object tab will provide properties for the selected object that you can
+        change.
+      skippable: 0
+      points: 0
     - identifier: deleteObject
       name: Deleting Objects
       description: You can now also delete any object, except for the camera. Delete
@@ -70,37 +90,56 @@ MonoBehaviour:
       points: 410
     - identifier: 
       name: 
-      description: You are now able to create your own custom scenes. Go crazy! If
-        you would like to use Virtual Ray Tracer again but without any restrictions,
-        you can enable "Cheat Mode" in the settings.
+      description: For more information you can click the help menu in the top left
+        or hover over some of the settings and a tooltip will show up. Feel free
+        to go back in tutorial or play around with what the Virtual Ray Tracer offers!
       skippable: 0
-      points: 0
+      points: 410
   - optionalTasksStart: 4
     tasks:
     - identifier: 
-      name: Vrijheid
-      description: Je bent bij het laatste level aangekomen! Dit is een Sandbox level,
-        wat betekent dat je hier alle tools kunt gebruiken om je eigen scene te bouwen.
+      name: Welkom!
+      description: Welkom bij het Sanbox level. In dit level kan je vrij gebruik
+        maken van alle onderdelen van de Virtual Ray Tracer. Deze tutorial zal je
+        helpen om de basis functionaliteit onder de knie te krijgen. ierdoor kan
+        je beginnen met leren over ray tracing.
       skippable: 1
       points: 93
     - identifier: createObject
-      name: "Cre\xEBer Objecten"
-      description: "Je kan nu objecten cre\xEBren. Cre\xEBer een object door op \"Cre\xEBer\"
-        te klikken en een object te kiezen uit de lijst die verschijnt."
+      name: "Cre\xEBren van Objecten"
+      description: "Je kan nu objecten cre\xEBren. cre\xEBer een object door op de
+        knop \"cre\xEBer\" te klikken links boven en uit de lijst een object te kiezen."
       skippable: 0
       points: 538
+    - identifier: movingObject
+      name: Bewegen van Objecten
+      description: Als je op een object klikt, dan kan je gizmo's zien bij het object.
+        Deze kan je gebruiken om te transleren, roteren en schalen door op de gizmo's
+        te klikken en te slepen. Selecteer rechtsboven de soort transformatie. Je
+        kan ook eigenschappen veranderen in het paneel aan de rechter kant.
+      skippable: 0
+      points: 0
+    - identifier: 
+      name: Eigenschappen Paneel
+      description: Het paneel rechts heeft ook andere instellingen die je kan aanpassen.
+        De Ray Tracer tab kan stralen in de scene aanpassen. de Camera tab heeft
+        instellingen om de camera aan te passen die het beeld rendert. het Object
+        tab geeft je de mogelijkheid om eigenschappen van een object aan te passen.
+      skippable: 0
+      points: 0
     - identifier: deleteObject
-      name: Deleting Objects
-      description: "Je kan nu ook elk object in de sc\xE8ne verwijderen, behalve
-        de camera. Verwijder een object dat niet de camera is, door op de \"Verwijder\"
-        knop te klikken in het menu."
+      name: Verwijder Objecten
+      description: Je kan nu elk object verwijderen, behalve de camera. Verwijder
+        een object dat niet de camera is door het aan te klikken in de scene en rechts
+        te klikken op de knop "Verwijder".
       skippable: 0
       points: 410
     - identifier: 
       name: 
-      description: "Je kan nu je zelf gebouwde sc\xE8nes maken. Ga los! Als je Virtual
-        Ray Tracer wilt gebruiken zonder beperkingen, dan kan je \"Cheat Mode\" aanzetten
-        in de instellingen."
+      description: Voor meer informatie kan je op de help knop linksboven klikken
+        of over een sommige text stilstaan en dan verschijnt er een tooltip. Voel
+        je vrij om terug te gaan in de tutorial of speel rond met alles wat de Virtual
+        Ray Tracer te bieden heeft
       skippable: 0
-      points: 0
+      points: 410
   Badges: []

@@ -9,15 +9,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2981704608641618389, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: TutorialTasks.Array.data[0].tasks.Array.data[2].description
-      value: You can now also delete any object, except for the camera. Delete a
-        non-camera object from the scene by selecting it and clicking the "Delete"
-        option in the menu.
+      value: When you click an object, you can see gizmos near this object. You can
+        use these to translate, rotate and scale the object by clicking and dragging
+        on the gizmos. In the topleft you can select which of these transformations
+        you want to apply. Alternatively, you can change values in the panel on the
+        right.
       objectReference: {fileID: 0}
     - target: {fileID: 2981704608641618389, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: TutorialTasks.Array.data[1].tasks.Array.data[2].description
-      value: "Je kan nu ook elk object in de sc\xE8ne verwijderen, behalve de camera.
-        Verwijder een object dat niet de camera is, door op de \"Verwijder\" knop
-        te klikken in het menu."
+      value: Als je op een object klikt, dan kan je gizmo's zien bij het object.
+        Deze kan je gebruiken om te transleren, roteren en schalen door op de gizmo's
+        te klikken en te slepen. Selecteer rechtsboven de soort transformatie. Je
+        kan ook eigenschappen veranderen in het paneel aan de rechter kant.
       objectReference: {fileID: 0}
     - target: {fileID: 2981704608641618394, guid: 5f54f6fe698098a47bffaceb215d99a3, type: 3}
       propertyPath: m_RootOrder
