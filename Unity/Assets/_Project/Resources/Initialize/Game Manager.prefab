@@ -101,14 +101,14 @@ MonoBehaviour:
       name: Welkom!
       description: Welkom bij het Sanbox level. In dit level kan je vrij gebruik
         maken van alle onderdelen van de Virtual Ray Tracer. Deze tutorial zal je
-        helpen om de basis functionaliteit onder de knie te krijgen. ierdoor kan
+        helpen om de basis functionaliteit onder de knie te krijgen. Hierdoor kan
         je beginnen met leren over ray tracing.
       skippable: 1
       points: 93
     - identifier: createObject
       name: "Cre\xEBren van Objecten"
-      description: "Je kan nu objecten cre\xEBren. cre\xEBer een object door op de
-        knop \"cre\xEBer\" te klikken links boven en uit de lijst een object te kiezen."
+      description: "Je kan nu objecten cre\xEBren. Cre\xEBer een object door op de
+        knop \"Cre\xEBer\" te klikken links boven en uit de lijst een object te kiezen."
       skippable: 0
       points: 538
     - identifier: movingObject
@@ -122,8 +122,8 @@ MonoBehaviour:
     - identifier: 
       name: Eigenschappen Paneel
       description: Het paneel rechts heeft ook andere instellingen die je kan aanpassen.
-        De Ray Tracer tab kan stralen in de scene aanpassen. de Camera tab heeft
-        instellingen om de camera aan te passen die het beeld rendert. het Object
+        De Ray Tracer tab kan stralen in de scene aanpassen. De Camera tab heeft
+        instellingen om de camera aan te passen die het beeld rendert. Het Object
         tab geeft je de mogelijkheid om eigenschappen van een object aan te passen.
       skippable: 0
       points: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
       skippable: 0
       points: 410
     - identifier: 
-      name: 
+      name: Einde
       description: Voor meer informatie kan je op de help knop linksboven klikken
         of over een sommige text stilstaan en dan verschijnt er een tooltip. Voel
         je vrij om terug te gaan in de tutorial of speel rond met alles wat de Virtual
